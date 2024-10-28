@@ -1,4 +1,4 @@
-// Dichiarazione variabili
+// Dichiarazione + inizializazione variabili
 let prezzoIniziale, prezzoFinale;
 let sconto = 0;
 const costoKm = 0.21;
@@ -6,9 +6,6 @@ const costoKm = 0.21;
 // Input utente
 const km = prompt("Inserisci i chilometri da percorrere:");
 const eta = prompt("Inserisci la tua età:");
-
-// Calcolo del prezzo
-prezzoIniziale = km * costoKm;
 
 // Applicazione dello sconto
 if (eta < 18) {
@@ -18,7 +15,8 @@ if (eta < 18) {
     sconto = 0.40; // Sconto del 40% per vecchi
     }
 
-// Calcolo del prezzo finale
+// Calcolo dei prezzi
+prezzoIniziale = km * costoKm;
 prezzoFinale = prezzoIniziale * (1 - sconto);
 
 // Stampa del prezzo finale in console
